@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OwlAgent — AI Agents That Grow Your Business on Autopilot</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<meta name="description" content="Custom AI agents for social media, marketing automation, and business growth. Replace entire teams with intelligent agents trained on your brand. Results in 14 days.">
+<meta property="og:title" content="OwlAgent — AI Agents That Grow Your Business on Autopilot">
+<meta property="og:description" content="Custom AI agents for social media, marketing, and business automation. Trained on your brand. Running 24/7. A fraction of the cost of hiring.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://owlagent.me">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OwlAgent — AI Agents That Grow Your Business">
+<meta name="twitter:description" content="Custom AI agents that handle your entire marketing workflow. From strategy to creation to optimization.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0a0a;
+  --surface:#111;
+  --surface-hover:#161616;
+  --surface-2:#0e0e0e;
+  --border:#1e1e1e;
+  --border-hover:#2a2a2a;
+  --text:#e8e8e8;
+  --text-secondary:#888;
+  --text-tertiary:#555;
+  --purple:#a78bfa;
+  --purple-dim:rgba(167,139,250,0.08);
+  --purple-glow:rgba(167,139,250,0.15);
+  --white:#fff;
+  --green:#34d399;
+  --radius:10px;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'DM Sans',system-ui,-apple-system,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--purple);color:#000}
+
+.container{max-width:680px;margin:0 auto;padding:0 24px}
+.container-wide{max-width:880px;margin:0 auto;padding:0 24px}
+
+/* ═══ ANIMATIONS ═══ */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:0.1s}
+.reveal-delay-2{transition-delay:0.2s}
+.reveal-delay-3{transition-delay:0.3s}
+
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-6px)}
+}
+@keyframes pulse-glow{
+  0%,100%{box-shadow:0 0 0 0 rgba(167,139,250,0.2)}
+  50%{box-shadow:0 0 20px 4px rgba(167,139,250,0.1)}
+}
+@keyframes gradient-shift{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/* ═══ TOPBAR ═══ */
+.topbar{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(10,10,10,0.88);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);
+}
+.topbar-inner{
+  max-width:880px;margin:0 auto;padding:12px 24px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.logo{
+  font-size:1.15rem;font-weight:700;
+  color:var(--white);text-decoration:none;
+  display:flex;align-items:center;gap:10px;
+  letter-spacing:-0.02em;
+}
+.nav-right{display:flex;align-items:center;gap:8px}
+.nav-link{
+  color:var(--text-secondary);text-decoration:none;
+  font-size:0.85rem;font-weight:500;
+  padding:8px 14px;border-radius:8px;
+  transition:color 0.2s;
+}
+.nav-link:hover{color:var(--text)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:10px 22px;border-radius:8px;
+  font-size:0.85rem;font-weight:600;
+  text-decoration:none;cursor:pointer;border:none;
+  font-family:inherit;transition:all 0.25s;
+}
+.btn-white{background:var(--white);color:#000}
+.btn-white:hover{opacity:0.9;transform:translateY(-1px)}
+.btn-outline{
+  background:transparent;color:var(--text);
+  border:1px solid var(--border);
+}
+.btn-outline:hover{border-color:var(--border-hover);background:var(--surface)}
+.btn-purple{
+  background:var(--purple);color:#000;
+}
+.btn-purple:hover{opacity:0.9;transform:translateY(-1px)}
+.btn-full{width:100%}
+.btn-lg{padding:14px 32px;font-size:0.9rem}
+
+/* ═══ HERO ═══ */
+.hero{
+  padding:140px 0 60px;
+  text-align:center;
+  position:relative;
+}
+.hero::before{
+  content:'';
+  position:absolute;
+  top:60px;left:50%;transform:translateX(-50%);
+  width:600px;height:600px;
+  background:radial-gradient(circle,rgba(167,139,250,0.04) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:6px 14px;border-radius:20px;
+  background:var(--purple-dim);
+  border:1px solid rgba(167,139,250,0.15);
+  font-size:0.75rem;font-weight:600;
+  color:var(--purple);
+  margin-bottom:24px;
+  letter-spacing:0.02em;
+}
+.hero-badge .dot{
+  width:6px;height:6px;border-radius:50%;
+  background:var(--green);
+  animation:pulse-glow 2s infinite;
+}
+.hero h1{
+  font-size:clamp(2.4rem,5.5vw,3.8rem);
+  font-weight:700;
+  line-height:1.08;
+  letter-spacing:-0.04em;
+  color:var(--white);
+}
+.hero h1 span{
+  background:linear-gradient(135deg,var(--purple),#c4b5fd,var(--purple));
+  background-size:200% 200%;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  animation:gradient-shift 4s ease infinite;
+}
+.hero-sub{
+  font-size:1.05rem;
+  color:var(--text-secondary);
+  max-width:500px;margin:20px auto 0;
+  line-height:1.7;
+}
+.hero-cta{
+  margin-top:32px;
+  display:flex;flex-direction:column;align-items:center;gap:12px;
+}
+.hero-cta .btn{padding:16px 0;width:100%;max-width:440px;font-size:0.95rem;border-radius:10px}
+.hero-cta .subtext{font-size:0.78rem;color:var(--text-tertiary)}
+
+/* ═══ METRICS BAR ═══ */
+.metrics{
+  padding:48px 0;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+.metrics-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+  text-align:center;
+}
+.metric .num{
+  font-size:1.6rem;font-weight:700;color:var(--white);
+  letter-spacing:-0.02em;
+}
+.metric .num span{color:var(--purple)}
+.metric .label{
+  font-size:0.8rem;color:var(--text-secondary);
+  margin-top:4px;
+}
+
+/* ═══ PROOF / DEMO SECTION ═══ */
+.proof{padding:80px 0}
+.proof .section-label{margin-bottom:16px}
+.proof h2{
+  font-size:clamp(1.6rem,3vw,2.2rem);
+  font-weight:700;line-height:1.2;
+  letter-spacing:-0.025em;
+  color:var(--white);margin-bottom:8px;
+}
+.proof>p,.proof .container>p{
+  font-size:0.95rem;color:var(--text-secondary);
+  line-height:1.7;max-width:520px;margin-bottom:32px;
+}
+.demo-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch;
+}
+.demo-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+  transition:border-color 0.2s,transform 0.2s;
+  display:flex;flex-direction:column;
+}
+.demo-card:hover{border-color:var(--border-hover);transform:translateY(-2px)}
+.demo-card-header{
+  padding:16px 20px;
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;gap:8px;
+}
+.demo-card-header .platform-dot{
+  width:8px;height:8px;border-radius:50%;
+}
+.demo-card-header .platform-name{
+  font-size:0.75rem;font-weight:600;color:var(--text-secondary);
+  text-transform:uppercase;letter-spacing:0.06em;
+}
+.demo-card-body{
+  padding:20px;
+  display:flex;flex-direction:column;flex:1;
+}
+.demo-card-body .generated-label{
+  font-size:0.65rem;font-weight:600;
+  color:var(--purple);text-transform:uppercase;
+  letter-spacing:0.08em;margin-bottom:10px;
+}
+.demo-card-body p{
+  font-size:0.85rem;color:var(--text);
+  line-height:1.65;
+}
+.demo-card-body .hashtags{
+  font-size:0.8rem;color:var(--purple);
+  margin-top:8px;opacity:0.7;
+}
+.demo-card-body .engagement{
+  margin-top:auto;padding-top:12px;
+  border-top:1px solid var(--border);
+  display:flex;gap:16px;
+  font-size:0.75rem;color:var(--text-tertiary);
+}
+.demo-card-body .engagement span{color:var(--green)}
+
+/* ═══ BUILT FOR ═══ */
+.built-for{padding:80px 0}
+.section-label{
+  font-size:0.7rem;font-weight:600;
+  letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--text-tertiary);margin-bottom:32px;
+}
+.cards-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:24px;
+  transition:border-color 0.2s;
+}
+.card:hover{border-color:var(--border-hover)}
+.card-icon{
+  font-size:1.2rem;margin-bottom:10px;
+  display:block;
+}
+.card h3{font-size:0.95rem;font-weight:600;color:var(--white);margin-bottom:6px}
+.card p{font-size:0.85rem;color:var(--text-secondary);line-height:1.6}
+
+/* ═══ VALUE PROP ═══ */
+.value{padding:80px 0}
+.value h2{
+  font-size:clamp(1.6rem,3vw,2.2rem);
+  font-weight:700;line-height:1.2;
+  letter-spacing:-0.025em;
+  color:var(--white);margin-bottom:16px;
+}
+.value>p,.value .container>p{
+  font-size:0.95rem;color:var(--text-secondary);
+  line-height:1.7;max-width:560px;
+}
+.value-blocks{
+  margin-top:40px;
+  display:flex;flex-direction:column;gap:12px;
+}
+.value-block{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:24px;
+  transition:border-color 0.2s;
+}
+.value-block:hover{border-color:var(--border-hover)}
+.value-block h3{font-size:0.95rem;font-weight:600;color:var(--white);margin-bottom:4px}
+.value-block h3 .tag{
+  color:var(--purple);font-weight:500;font-size:0.8rem;
+  margin-left:8px;
+}
+.value-block p{font-size:0.85rem;color:var(--text-secondary);line-height:1.7}
+
+/* ═══ CONTROL ═══ */
+.control{padding:80px 0}
+.control-points{
+  margin-top:32px;
+  display:flex;flex-direction:column;gap:24px;
+}
+.control-point{
+  display:flex;gap:16px;align-items:flex-start;
+}
+.control-icon{
+  width:8px;height:8px;min-width:8px;
+  border-radius:50%;background:var(--purple);
+  margin-top:8px;
+}
+.control-point h3{font-size:0.95rem;font-weight:600;color:var(--white);margin-bottom:2px}
+.control-point p{font-size:0.85rem;color:var(--text-secondary);line-height:1.6}
+
+/* ═══ COMPARISON ═══ */
+.comparison{padding:80px 0}
+.compare-table{
+  margin-top:32px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+.compare-row{
+  display:grid;grid-template-columns:1fr 1fr 1fr;
+  border-bottom:1px solid var(--border);
+}
+.compare-row:last-child{border-bottom:none}
+.compare-row.header{
+  background:var(--surface-2);
+}
+.compare-cell{
+  padding:14px 20px;
+  font-size:0.82rem;
+  color:var(--text-secondary);
+  border-right:1px solid var(--border);
+}
+.compare-cell:last-child{border-right:none}
+.compare-row.header .compare-cell{
+  font-weight:600;color:var(--text-tertiary);
+  font-size:0.7rem;text-transform:uppercase;
+  letter-spacing:0.06em;
+}
+.compare-cell.highlight{
+  color:var(--white);font-weight:500;
+  background:rgba(167,139,250,0.03);
+}
+.compare-cell .check{color:var(--green)}
+.compare-cell .cross{color:var(--text-tertiary)}
+
+/* ═══ PROCESS ═══ */
+.process{padding:80px 0}
+.steps{
+  margin-top:32px;
+  display:flex;flex-direction:column;gap:0;
+}
+.step{
+  padding:24px 0;
+  border-bottom:1px solid var(--border);
+  display:flex;gap:20px;
+}
+.step:last-child{border-bottom:none}
+.step-num{
+  font-size:0.75rem;font-weight:600;
+  color:var(--text-tertiary);
+  min-width:48px;padding-top:2px;
+}
+.step h3{font-size:0.95rem;font-weight:600;color:var(--white);margin-bottom:4px}
+.step .step-time{font-size:0.75rem;color:var(--purple);font-weight:600;margin-bottom:6px}
+.step p{font-size:0.85rem;color:var(--text-secondary);line-height:1.6}
+
+/* ═══ PRICING ═══ */
+.pricing{padding:80px 0}
+.price-cards{
+  margin-top:32px;
+  display:flex;flex-direction:column;gap:8px;
+}
+.price-row{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:20px 24px;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:border-color 0.2s;
+}
+.price-row:hover{border-color:var(--border-hover)}
+.price-row.featured{border-color:var(--purple);position:relative}
+.price-row.featured::before{
+  content:'';position:absolute;inset:-1px;
+  border-radius:var(--radius);
+  background:linear-gradient(135deg,rgba(167,139,250,0.1),transparent);
+  z-index:0;pointer-events:none;
+}
+.price-row .plan-info{flex:1;position:relative;z-index:1}
+.price-row .plan-name{
+  font-size:0.95rem;font-weight:600;color:var(--white);
+  display:flex;align-items:center;gap:8px;
+}
+.price-row .plan-name .badge{
+  font-size:0.65rem;font-weight:600;
+  color:var(--purple);
+  padding:2px 8px;border-radius:4px;
+  background:rgba(167,139,250,0.1);
+}
+.price-row .plan-desc{font-size:0.8rem;color:var(--text-secondary);margin-top:2px}
+.price-row .plan-prices{text-align:right;position:relative;z-index:1}
+.price-row .setup{font-size:0.8rem;color:var(--text-tertiary)}
+.price-row .monthly{
+  font-size:1.1rem;font-weight:700;color:var(--white);
+}
+.price-row .monthly small{font-size:0.8rem;color:var(--text-secondary);font-weight:400}
+
+.price-cta{margin-top:24px}
+.price-cta .btn{padding:16px 0;width:100%;border-radius:10px;font-size:0.9rem}
+.price-note{
+  text-align:center;margin-top:16px;
+  font-size:0.78rem;color:var(--text-tertiary);
+}
+
+/* ═══ FOUNDER ═══ */
+.founder{padding:60px 0}
+.founder-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:24px;
+  display:flex;align-items:center;gap:16px;
+}
+.founder-avatar{
+  width:48px;height:48px;min-width:48px;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--purple),#8b5cf6);
+  display:flex;align-items:center;justify-content:center;
+  font-size:0.85rem;font-weight:700;color:#000;
+}
+.founder-info .name{font-size:0.95rem;font-weight:600;color:var(--white)}
+.founder-info .desc{font-size:0.8rem;color:var(--text-secondary)}
+.founder-link{
+  margin-left:auto;font-size:0.85rem;
+  color:var(--text-secondary);text-decoration:none;font-weight:500;
+  transition:color 0.2s;
+}
+.founder-link:hover{color:var(--purple)}
+
+/* ═══ GUARANTEE ═══ */
+.guarantee{padding:20px 0 60px}
+.guarantee-box{
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:24px;text-align:center;
+  background:var(--surface);
+}
+.guarantee-box h3{
+  font-size:0.95rem;font-weight:600;color:var(--white);margin-bottom:4px;
+}
+.guarantee-box p{font-size:0.85rem;color:var(--text-secondary)}
+
+/* ═══ FAQ ═══ */
+.faq{padding:80px 0}
+.faq-list{display:flex;flex-direction:column;gap:6px}
+.faq-item{
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+  transition:border-color 0.2s;
+}
+.faq-item:hover{border-color:var(--border-hover)}
+.faq-q{
+  width:100%;background:var(--surface);
+  border:none;padding:18px 20px;
+  display:flex;justify-content:space-between;align-items:center;
+  cursor:pointer;text-align:left;
+  font-family:inherit;font-size:0.9rem;font-weight:500;
+  color:var(--text);
+}
+.faq-q .icon{
+  font-size:1.2rem;color:var(--text-tertiary);
+  transition:transform 0.3s;font-weight:300;
+}
+.faq-item.open .faq-q .icon{transform:rotate(45deg)}
+.faq-a{
+  max-height:0;overflow:hidden;
+  transition:max-height 0.3s ease,padding 0.3s ease;
+  background:var(--surface);
+}
+.faq-item.open .faq-a{max-height:200px;padding:0 20px 18px}
+.faq-a p{font-size:0.85rem;color:var(--text-secondary);line-height:1.7}
+
+/* ═══ FINAL CTA ═══ */
+.final-cta{
+  padding:80px 0 40px;
+  text-align:center;
+  position:relative;
+}
+.final-cta::before{
+  content:'';
+  position:absolute;
+  bottom:0;left:50%;transform:translateX(-50%);
+  width:500px;height:400px;
+  background:radial-gradient(circle,rgba(167,139,250,0.04) 0%,transparent 70%);
+  pointer-events:none;
+}
+.final-cta h2{
+  font-size:clamp(1.8rem,4vw,2.6rem);
+  font-weight:700;letter-spacing:-0.03em;
+  color:var(--white);margin-bottom:8px;
+}
+.final-cta>p,.final-cta .container>p{
+  font-size:0.9rem;color:var(--text-secondary);
+  margin-bottom:28px;
+}
+.final-cta .container>p a{color:var(--purple);text-decoration:none;font-weight:600}
+.final-sub{
+  font-size:0.78rem;color:var(--text-tertiary);
+  margin-top:12px;
+}
+
+/* ═══ FOOTER ═══ */
+footer{
+  border-top:1px solid var(--border);
+  padding:24px 0;
+  font-size:0.8rem;color:var(--text-tertiary);
+}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:640px){
+  .cards-grid,.demo-grid{grid-template-columns:1fr}
+  .metrics-grid{grid-template-columns:1fr;gap:20px}
+  .price-row{flex-direction:column;align-items:flex-start;gap:12px}
+  .price-row .plan-prices{text-align:left}
+  .founder-card{flex-direction:column;text-align:center}
+  .founder-link{margin:0}
+  .nav-link{display:none}
+  .compare-cell{padding:10px 12px;font-size:0.75rem}
+  .hero{padding:120px 0 48px}
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<nav class="topbar">
+  <div class="topbar-inner">
+    <a href="#" class="logo">
+      <img src="data:image/png;base64,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" alt="OwlAgent" style="height:14px;width:auto">
+      OwlAgent
+    </a>
+    <div class="nav-right">
+      <a href="#proof" class="nav-link">How it works</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="https://cal.com/owlagent/growth-audit" class="btn btn-white" target="_blank" rel="noopener">Get Free Audit →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge reveal">
+      <span class="dot"></span>
+      Accepting 3 new clients this month
+    </div>
+    <h1 class="reveal reveal-delay-1">Your marketing team<br>replaced by <span>AI agents</span></h1>
+    <p class="hero-sub reveal reveal-delay-2">We build AI agents that create content, post daily, generate leads, and optimize campaigns across every platform. Trained on your brand. Running 24/7.</p>
+    <div class="hero-cta reveal reveal-delay-3">
+      <a href="https://cal.com/owlagent/growth-audit" class="btn btn-white btn-lg btn-full" target="_blank" rel="noopener" style="max-width:440px">Get Your Free Growth Audit →</a>
+      <span class="subtext">Free · 30 min call · Custom strategy delivered in 48h</span>
+    </div>
+  </div>
+</section>
+
+<!-- METRICS BAR -->
+<section class="metrics">
+  <div class="container">
+    <div class="metrics-grid">
+      <div class="metric reveal">
+        <div class="num">$4,200<span>/mo</span></div>
+        <div class="label">Average client savings vs hiring</div>
+      </div>
+      <div class="metric reveal reveal-delay-1">
+        <div class="num">14 <span>days</span></div>
+        <div class="label">From kickoff to live agents</div>
+      </div>
+      <div class="metric reveal reveal-delay-2">
+        <div class="num">24/7</div>
+        <div class="label">Agents never sleep, never quit</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF / DEMO -->
+<section id="proof" class="proof">
+  <div class="container">
+    <div class="section-label reveal">SEE IT IN ACTION</div>
+    <h2 class="reveal">This is what your agent produces.</h2>
+    <p class="reveal">Real examples of AI-generated content. Each post is written in the client's brand voice, optimized for the platform, and ready to publish.</p>
+
+    <div class="demo-grid">
+      <div class="demo-card reveal">
+        <div class="demo-card-header">
+          <div class="platform-dot" style="background:#0077B5"></div>
+          <div class="platform-name">LinkedIn</div>
+        </div>
+        <div class="demo-card-body">
+          <div class="generated-label">AI-generated · SaaS client</div>
+          <p>We spent 6 months building a feature nobody asked for.<br><br>The dashboard looked beautiful. The analytics were deep. The UX was polished.<br><br>Zero adoption.<br><br>Here's what we learned about building what customers actually want ↓</p>
+          <div class="engagement">
+            <span>↑ 12.4K impressions</span>
+            <span>↑ 847 engagements</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-card reveal reveal-delay-1">
+        <div class="demo-card-header">
+          <div class="platform-dot" style="background:#1DA1F2"></div>
+          <div class="platform-name">Twitter / X</div>
+        </div>
+        <div class="demo-card-body">
+          <div class="generated-label">AI-generated · DTC brand</div>
+          <p>your morning routine is 14 steps and a crystal.<br><br>ours is one product, 2 minutes, done.<br><br>skincare shouldn't need a PhD.</p>
+          <div class="hashtags">#skincare #minimalist #selfcare</div>
+          <div class="engagement">
+            <span>↑ 38K views</span>
+            <span>↑ 2.1K likes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-card reveal">
+        <div class="demo-card-header">
+          <div class="platform-dot" style="background:#E1306C"></div>
+          <div class="platform-name">Instagram</div>
+        </div>
+        <div class="demo-card-body">
+          <div class="generated-label">AI-generated · E-commerce</div>
+          <p>POV: You stopped guessing what to post and let AI analyze your top 50 competitors' best-performing content.<br><br>The result? Every post is engineered to convert — not just look pretty.</p>
+          <div class="engagement">
+            <span>↑ 5.2K reach</span>
+            <span>↑ 312 saves</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-card reveal reveal-delay-1">
+        <div class="demo-card-header">
+          <div class="platform-dot" style="background:#FF0050"></div>
+          <div class="platform-name">TikTok script</div>
+        </div>
+        <div class="demo-card-body">
+          <div class="generated-label">AI-generated · Wellness brand</div>
+          <p><strong>Hook:</strong> "Stop buying supplements you don't need"<br><br><strong>Body:</strong> 3 signs your body is already getting enough — and 1 thing most people are actually missing<br><br><strong>CTA:</strong> Link in bio for the free quiz</p>
+          <div class="engagement">
+            <span>↑ 94K views</span>
+            <span>↑ 1.8K shares</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUILT FOR -->
+<section class="built-for">
+  <div class="container">
+    <div class="section-label reveal">BUILT FOR</div>
+    <div class="cards-grid">
+      <div class="card reveal">
+        
+        <h3>E-commerce brands</h3>
+        <p>Automate content across TikTok, Instagram, and Twitter that drives sales — not just likes.</p>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        
+        <h3>SaaS companies</h3>
+        <p>Consistent social presence and SEO content that builds pipeline on autopilot.</p>
+      </div>
+      <div class="card reveal">
+        
+        <h3>Agencies</h3>
+        <p>White-label AI automation for your clients. Scale to 10x clients without 10x headcount.</p>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        
+        <h3>Creators & solopreneurs</h3>
+        <p>Stop spending hours on content. Let agents handle strategy, creation, and posting.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE PROP -->
+<section class="value">
+  <div class="container">
+    <div class="section-label reveal">WHAT WE BUILD</div>
+    <h2 class="reveal">Not another scheduling tool.<br>A complete growth engine.</h2>
+    <p class="reveal">Custom AI agent systems that handle your entire marketing workflow — from strategy to creation to optimization.</p>
+    <div class="value-blocks">
+      <div class="value-block reveal">
+        <h3>Social media agents <span class="tag">Content + Strategy</span></h3>
+        <p>AI creates, schedules, and optimizes content across TikTok, Instagram, Twitter, and LinkedIn. Platform-native formats. In your brand voice. Every day.</p>
+      </div>
+      <div class="value-block reveal">
+        <h3>Growth marketing agents <span class="tag">SEO + Ads + Email</span></h3>
+        <p>SEO articles, email sequences, ad copy, and landing pages — all automated with weekly performance reports and self-optimizing campaigns.</p>
+      </div>
+      <div class="value-block reveal">
+        <h3>Business automation agents <span class="tag">Ops + CRM + Support</span></h3>
+        <p>CRM workflows, lead scoring, customer support, data entry. Replace repetitive tasks with agents that run 24/7 at zero marginal cost.</p>
+      </div>
+      <div class="value-block reveal">
+        <h3>Lead generation engine <span class="tag">Outbound + Inbound</span></h3>
+        <p>Automated prospecting, personalized outreach sequences, and smart follow-ups. Your pipeline fills itself while you focus on closing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTROL -->
+<section class="control">
+  <div class="container">
+    <div class="section-label reveal">YOU STAY IN CONTROL</div>
+    <h2 class="reveal" style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;letter-spacing:-0.025em;color:var(--white)">Human-approved. Always.</h2>
+    <div class="control-points">
+      <div class="control-point reveal">
+        <div class="control-icon"></div>
+        <div>
+          <h3>Every post reviewed before publishing</h3>
+          <p>You see exactly what goes out. Approve via dashboard, Telegram, or Slack. The agents do 95% — you do the 5% that requires human judgment.</p>
+        </div>
+      </div>
+      <div class="control-point reveal">
+        <div class="control-icon"></div>
+        <div>
+          <h3>Your brand voice, protected</h3>
+          <p>Agents are trained on your existing content, tone, and style. The output sounds like you wrote it — not like ChatGPT.</p>
+        </div>
+      </div>
+      <div class="control-point reveal">
+        <div class="control-icon"></div>
+        <div>
+          <h3>The growth loop</h3>
+          <p>Weekly intelligence reports analyze what drove leads and what flopped. The strategy adjusts automatically so results compound over time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="comparison">
+  <div class="container">
+    <div class="section-label reveal">WHY OWLAGENT</div>
+    <h2 class="reveal" style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;letter-spacing:-0.025em;color:var(--white)">The math is simple.</h2>
+    <div class="compare-table reveal">
+      <div class="compare-row header">
+        <div class="compare-cell"></div>
+        <div class="compare-cell">Full-time hire</div>
+        <div class="compare-cell highlight">OwlAgent</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell">Monthly cost</div>
+        <div class="compare-cell">$4,500 – $8,000+</div>
+        <div class="compare-cell highlight">$690 – $1,890</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell">Platforms covered</div>
+        <div class="compare-cell">1–2 max</div>
+        <div class="compare-cell highlight">All platforms</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell">Working hours</div>
+        <div class="compare-cell">8h/day, 5 days</div>
+        <div class="compare-cell highlight">24/7/365</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell">Time to start</div>
+        <div class="compare-cell">4–8 weeks hiring</div>
+        <div class="compare-cell highlight">14 days live</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell">Scales with you</div>
+        <div class="compare-cell"><span class="cross">✕</span> Need more hires</div>
+        <div class="compare-cell highlight"><span class="check">✓</span> Same cost</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="container">
+    <div class="section-label reveal">HOW IT WORKS</div>
+    <h2 class="reveal" style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;letter-spacing:-0.025em;color:var(--white)">Live agents in two weeks</h2>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <div>
+          <div class="step-time">Day 1–3</div>
+          <h3>Discovery & Audit</h3>
+          <p>We audit your marketing, competitors, and audience. You get a custom agent strategy with projected ROI — free, no commitment.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">02</div>
+        <div>
+          <div class="step-time">Day 4–10</div>
+          <h3>Agent Configuration</h3>
+          <p>We build your agent stack. Train on your brand voice. Connect platforms. Set up approval workflows and analytics.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">03</div>
+        <div>
+          <div class="step-time">Day 11–14</div>
+          <h3>Launch & Hypercare</h3>
+          <p>Agents go live with human approval. We monitor 24/7, tune quality, and adjust strategy based on real-time performance.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">04</div>
+        <div>
+          <div class="step-time">Month 2+</div>
+          <h3>Compound Growth</h3>
+          <p>The feedback loop kicks in. Agents learn what converts. Content gets smarter. Cost per lead drops every month.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="pricing">
+  <div class="container">
+    <div class="section-label reveal">PRICING</div>
+    <h2 class="reveal" style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;letter-spacing:-0.025em;color:var(--white)">Transparent pricing. No surprises.</h2>
+    <div class="price-cards">
+      <div class="price-row reveal">
+        <div class="plan-info">
+          <div class="plan-name">Starter</div>
+          <div class="plan-desc">1 platform · Content + strategy + weekly growth reports</div>
+        </div>
+        <div class="plan-prices">
+          <div class="setup">$1,490 setup</div>
+          <div class="monthly">$690 <small>/mo</small></div>
+        </div>
+      </div>
+      <div class="price-row featured reveal">
+        <div class="plan-info">
+          <div class="plan-name">Growth <span class="badge">POPULAR</span></div>
+          <div class="plan-desc">All platforms · Lead gen · SEO · Email · CRM · Priority support</div>
+        </div>
+        <div class="plan-prices">
+          <div class="setup">$2,290 setup</div>
+          <div class="monthly">$1,890 <small>/mo</small></div>
+        </div>
+      </div>
+      <div class="price-row reveal">
+        <div class="plan-info">
+          <div class="plan-name">Enterprise</div>
+          <div class="plan-desc">White-label · SLA · Dedicated strategist · Custom integrations</div>
+        </div>
+        <div class="plan-prices">
+          <div class="setup">Custom setup</div>
+          <div class="monthly">$4,900+ <small>/mo</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="price-cta reveal">
+      <a href="https://cal.com/owlagent/growth-audit" class="btn btn-white btn-full" target="_blank" rel="noopener">Book a free call →</a>
+    </div>
+    <div class="price-note reveal">Monthly billing · Cancel anytime · Setup guarantee</div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="founder">
+  <div class="container">
+    <div class="founder-card reveal">
+      <div class="founder-avatar">L</div>
+      <div class="founder-info">
+        <div class="name">Talk to Lorenzo</div>
+        <div class="desc">Growth strategist · Building AI automation systems since 2023</div>
+      </div>
+      <a href="https://cal.com/owlagent/growth-audit" class="founder-link" target="_blank" rel="noopener">Book a call →</a>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="guarantee">
+  <div class="container">
+    <div class="guarantee-box reveal">
+      <h3>100% setup guarantee</h3>
+      <p>If you're not satisfied with the agent setup within the first 14 days, we refund your setup fee — no questions asked.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq">
+  <div class="container">
+    <div class="section-label reveal">FAQ</div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Will the content sound like AI?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a"><p>No. Every agent is trained on your existing content, brand guidelines, and voice. The output sounds like you — not like ChatGPT. We calibrate until you can't tell the difference.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Do I need to be technical?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a"><p>Not at all. We handle everything — setup, integrations, optimization. You manage content through a simple dashboard, Telegram, or Slack. Approve with one click.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          What platforms do you support?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a"><p>TikTok, Instagram, Twitter/X, LinkedIn, email sequences, and Google Ads. Each gets its own agent optimized for that platform's algorithm and format.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          How is this different from Buffer or Hootsuite?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a"><p>Those are schedulers — you still create the content. We automate the entire workflow: strategy, content creation, posting, analytics, and optimization. The agents learn and improve weekly.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          What if I want to cancel?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a"><p>Monthly billing, cancel whenever. No lock-in, no penalties. You keep all the content and workflows we built. Plus the 14-day setup guarantee if you're not happy from day one.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Can I see a demo before committing?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a"><p>Yes — the free growth audit IS the demo. We'll analyze your brand, show you exactly what the agents would produce, and give you a custom strategy. No cost, no commitment.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="cta" class="final-cta">
+  <div class="container">
+    <h2 class="reveal">Ready to stop hiring<br>and start automating?</h2>
+    <p class="reveal">Book a free 30-minute growth audit. We'll show you exactly what your AI agents would produce.</p>
+    <a href="https://cal.com/owlagent/growth-audit" class="btn btn-white btn-lg reveal" style="max-width:440px;width:100%" target="_blank" rel="noopener">Book Your Free Growth Audit →</a>
+    <div class="final-sub reveal">Free · No commitment · Custom strategy in 48h</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between">
+    <a href="#" class="logo" style="font-size:1rem">
+      <img src="data:image/png;base64,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" alt="OwlAgent" style="height:14px;width:auto">
+      OwlAgent
+    </a>
+    <p>© 2026 OwlAgent</p>
+  </div>
+</footer>
+
+<script>
+// Reveal on scroll
+const r=document.querySelectorAll('.reveal');
+const o=new IntersectionObserver(e=>{
+  e.forEach(i=>{if(i.isIntersecting){i.target.classList.add('visible');o.unobserve(i.target)}})
+},{threshold:0.08,rootMargin:'0px 0px -30px 0px'});
+r.forEach(el=>o.observe(el));
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}
+  });
+});
+</script>
+
+</body>
+</html>

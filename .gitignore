@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+.vercel
+.env
+.env.local
+*.log
+owlagent-landing-v3_1.html
