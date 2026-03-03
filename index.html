@@ -552,6 +552,14 @@ footer{
   .compare-cell{padding:10px 12px;font-size:0.75rem}
   .hero{padding:120px 0 48px}
 }
+.lang-toggle{
+  background:transparent;border:1px solid var(--border);
+  color:var(--text);font-family:inherit;font-size:0.75rem;
+  font-weight:600;letter-spacing:0.05em;
+  padding:6px 12px;border-radius:6px;cursor:pointer;
+  transition:all 0.2s;
+}
+.lang-toggle:hover{border-color:var(--purple);color:var(--purple)}
 </style>
 </head>
 <body>
@@ -564,10 +572,11 @@ footer{
       OwlAgent
     </a>
     <div class="nav-right">
-      <a href="#proof" class="nav-link">How it works</a>
-      <a href="#pricing" class="nav-link">Pricing</a>
-      <a href="#faq" class="nav-link">FAQ</a>
-      <a href="https://cal.com/owlagent/growth-audit" class="btn btn-white" target="_blank" rel="noopener">Get Free Audit →</a>
+      <button class="lang-toggle" onclick="toggleLang()" id="langBtn">FR</button>
+      <a href="#proof" class="nav-link" data-en="How it works" data-fr="Comment ça marche">How it works</a>
+      <a href="#pricing" class="nav-link" data-en="Pricing" data-fr="Tarifs">Pricing</a>
+      <a href="#faq" class="nav-link" data-en="FAQ" data-fr="FAQ">FAQ</a>
+      <a href="https://cal.com/owlagent/growth-audit" class="btn btn-white" target="_blank" rel="noopener" data-en="Get Free Audit →" data-fr="Audit Gratuit →">Get Free Audit →</a>
     </div>
   </div>
 </nav>
@@ -577,13 +586,13 @@ footer{
   <div class="container">
     <div class="hero-badge reveal">
       <span class="dot"></span>
-      Accepting 3 new clients this month
+      <span data-en="Accepting 3 new clients this month" data-fr="3 nouvelles places disponibles ce mois-ci">Accepting 3 new clients this month</span>
     </div>
-    <h1 class="reveal reveal-delay-1">Your marketing team<br>replaced by <span>AI agents</span></h1>
-    <p class="hero-sub reveal reveal-delay-2">We build AI agents that create content, post daily, generate leads, and optimize campaigns across every platform. Trained on your brand. Running 24/7.</p>
+    <h1 class="reveal reveal-delay-1" data-en="Your marketing team<br>replaced by <span>AI agents</span>" data-fr="Votre équipe marketing<br>remplacée par des <span>agents IA</span>">Your marketing team<br>replaced by <span>AI agents</span></h1>
+    <p class="hero-sub reveal reveal-delay-2" data-en="We build AI agents that create content, post daily, generate leads, and optimize campaigns across every platform. Trained on your brand. Running 24/7." data-fr="Nous créons des agents IA qui produisent du contenu, publient chaque jour, génèrent des leads et optimisent vos campagnes sur toutes les plateformes. Formés à votre marque. Actifs 24h/24.">We build AI agents that create content, post daily, generate leads, and optimize campaigns across every platform. Trained on your brand. Running 24/7.</p>
     <div class="hero-cta reveal reveal-delay-3">
-      <a href="https://cal.com/owlagent/growth-audit" class="btn btn-white btn-lg btn-full" target="_blank" rel="noopener" style="max-width:440px">Get Your Free Growth Audit →</a>
-      <span class="subtext">Free · 30 min call · Custom strategy delivered in 48h</span>
+      <a href="https://cal.com/owlagent/growth-audit" class="btn btn-white btn-lg btn-full" target="_blank" rel="noopener" style="max-width:440px" data-en="Get Your Free Growth Audit →" data-fr="Obtenez Votre Audit Croissance Gratuit →">Get Your Free Growth Audit →</a>
+      <span class="subtext" data-en="Free · 30 min call · Custom strategy delivered in 48h" data-fr="Gratuit · Appel de 30 min · Stratégie personnalisée livrée en 48h">Free · 30 min call · Custom strategy delivered in 48h</span>
     </div>
   </div>
 </section>
@@ -594,15 +603,15 @@ footer{
     <div class="metrics-grid">
       <div class="metric reveal">
         <div class="num">$4,200<span>/mo</span></div>
-        <div class="label">Average client savings vs hiring</div>
+        <div class="label" data-en="Average client savings vs hiring" data-fr="Économies moyennes par client vs embauche">Average client savings vs hiring</div>
       </div>
       <div class="metric reveal reveal-delay-1">
         <div class="num">14 <span>days</span></div>
-        <div class="label">From kickoff to live agents</div>
+        <div class="label" data-en="From kickoff to live agents" data-fr="Du lancement aux agents en production">From kickoff to live agents</div>
       </div>
       <div class="metric reveal reveal-delay-2">
         <div class="num">24/7</div>
-        <div class="label">Agents never sleep, never quit</div>
+        <div class="label" data-en="Agents never sleep, never quit" data-fr="Les agents ne dorment jamais, ne démissionnent jamais">Agents never sleep, never quit</div>
       </div>
     </div>
   </div>
@@ -611,9 +620,9 @@ footer{
 <!-- PROOF / DEMO -->
 <section id="proof" class="proof">
   <div class="container">
-    <div class="section-label reveal">SEE IT IN ACTION</div>
-    <h2 class="reveal">This is what your agent produces.</h2>
-    <p class="reveal">Real examples of AI-generated content. Each post is written in the client's brand voice, optimized for the platform, and ready to publish.</p>
+    <div class="section-label reveal" data-en="SEE IT IN ACTION" data-fr="VOYEZ PAR VOUS-MÊME">SEE IT IN ACTION</div>
+    <h2 class="reveal" data-en="This is what your agent produces." data-fr="Voici ce que votre agent produit.">This is what your agent produces.</h2>
+    <p class="reveal" data-en="Real examples of AI-generated content. Each post is written in the client's brand voice, optimized for the platform, and ready to publish." data-fr="Exemples réels de contenu généré par IA. Chaque publication est rédigée dans le ton de la marque du client, optimisée pour la plateforme et prête à publier.">Real examples of AI-generated content. Each post is written in the client's brand voice, optimized for the platform, and ready to publish.</p>
 
     <div class="demo-grid">
       <div class="demo-card reveal">
@@ -622,7 +631,7 @@ footer{
           <div class="platform-name">LinkedIn</div>
         </div>
         <div class="demo-card-body">
-          <div class="generated-label">AI-generated · SaaS client</div>
+          <div class="generated-label" data-en="AI-generated · SaaS client" data-fr="Généré par IA · Client SaaS">AI-generated · SaaS client</div>
           <p>We spent 6 months building a feature nobody asked for.<br><br>The dashboard looked beautiful. The analytics were deep. The UX was polished.<br><br>Zero adoption.<br><br>Here's what we learned about building what customers actually want ↓</p>
           <div class="engagement">
             <span>↑ 12.4K impressions</span>
@@ -637,7 +646,7 @@ footer{
           <div class="platform-name">Twitter / X</div>
         </div>
         <div class="demo-card-body">
-          <div class="generated-label">AI-generated · DTC brand</div>
+          <div class="generated-label" data-en="AI-generated · DTC brand" data-fr="Généré par IA · Marque DTC">AI-generated · DTC brand</div>
           <p>your morning routine is 14 steps and a crystal.<br><br>ours is one product, 2 minutes, done.<br><br>skincare shouldn't need a PhD.</p>
           <div class="hashtags">#skincare #minimalist #selfcare</div>
           <div class="engagement">
@@ -653,7 +662,7 @@ footer{
           <div class="platform-name">Instagram</div>
         </div>
         <div class="demo-card-body">
-          <div class="generated-label">AI-generated · E-commerce</div>
+          <div class="generated-label" data-en="AI-generated · E-commerce" data-fr="Généré par IA · E-commerce">AI-generated · E-commerce</div>
           <p>POV: You stopped guessing what to post and let AI analyze your top 50 competitors' best-performing content.<br><br>The result? Every post is engineered to convert — not just look pretty.</p>
           <div class="engagement">
             <span>↑ 5.2K reach</span>
@@ -665,10 +674,10 @@ footer{
       <div class="demo-card reveal reveal-delay-1">
         <div class="demo-card-header">
           <div class="platform-dot" style="background:#FF0050"></div>
-          <div class="platform-name">TikTok script</div>
+          <div class="platform-name" data-en="TikTok script" data-fr="Script TikTok">TikTok script</div>
         </div>
         <div class="demo-card-body">
-          <div class="generated-label">AI-generated · Wellness brand</div>
+          <div class="generated-label" data-en="AI-generated · Wellness brand" data-fr="Généré par IA · Marque bien-être">AI-generated · Wellness brand</div>
           <p><strong>Hook:</strong> "Stop buying supplements you don't need"<br><br><strong>Body:</strong> 3 signs your body is already getting enough — and 1 thing most people are actually missing<br><br><strong>CTA:</strong> Link in bio for the free quiz</p>
           <div class="engagement">
             <span>↑ 94K views</span>
@@ -683,27 +692,27 @@ footer{
 <!-- BUILT FOR -->
 <section class="built-for">
   <div class="container">
-    <div class="section-label reveal">BUILT FOR</div>
+    <div class="section-label reveal" data-en="BUILT FOR" data-fr="CONÇU POUR">BUILT FOR</div>
     <div class="cards-grid">
       <div class="card reveal">
-        
-        <h3>E-commerce brands</h3>
-        <p>Automate content across TikTok, Instagram, and Twitter that drives sales — not just likes.</p>
+
+        <h3 data-en="E-commerce brands" data-fr="Marques e-commerce">E-commerce brands</h3>
+        <p data-en="Automate content across TikTok, Instagram, and Twitter that drives sales — not just likes." data-fr="Automatisez le contenu sur TikTok, Instagram et Twitter pour générer des ventes — pas juste des likes.">Automate content across TikTok, Instagram, and Twitter that drives sales — not just likes.</p>
       </div>
       <div class="card reveal reveal-delay-1">
-        
-        <h3>SaaS companies</h3>
-        <p>Consistent social presence and SEO content that builds pipeline on autopilot.</p>
+
+        <h3 data-en="SaaS companies" data-fr="Entreprises SaaS">SaaS companies</h3>
+        <p data-en="Consistent social presence and SEO content that builds pipeline on autopilot." data-fr="Une présence sociale constante et du contenu SEO qui alimente votre pipeline en autopilote.">Consistent social presence and SEO content that builds pipeline on autopilot.</p>
       </div>
       <div class="card reveal">
-        
-        <h3>Agencies</h3>
-        <p>White-label AI automation for your clients. Scale to 10x clients without 10x headcount.</p>
+
+        <h3 data-en="Agencies" data-fr="Agences">Agencies</h3>
+        <p data-en="White-label AI automation for your clients. Scale to 10x clients without 10x headcount." data-fr="Automatisation IA en marque blanche pour vos clients. Multipliez par 10 sans multiplier vos effectifs.">White-label AI automation for your clients. Scale to 10x clients without 10x headcount.</p>
       </div>
       <div class="card reveal reveal-delay-1">
-        
-        <h3>Creators & solopreneurs</h3>
-        <p>Stop spending hours on content. Let agents handle strategy, creation, and posting.</p>
+
+        <h3 data-en="Creators & solopreneurs" data-fr="Créateurs & solopreneurs">Creators & solopreneurs</h3>
+        <p data-en="Stop spending hours on content. Let agents handle strategy, creation, and posting." data-fr="Arrêtez de passer des heures sur le contenu. Laissez les agents gérer la stratégie, la création et la publication.">Stop spending hours on content. Let agents handle strategy, creation, and posting.</p>
       </div>
     </div>
   </div>
@@ -712,25 +721,25 @@ footer{
 <!-- VALUE PROP -->
 <section class="value">
   <div class="container">
-    <div class="section-label reveal">WHAT WE BUILD</div>
-    <h2 class="reveal">Not another scheduling tool.<br>A complete growth engine.</h2>
-    <p class="reveal">Custom AI agent systems that handle your entire marketing workflow — from strategy to creation to optimization.</p>
+    <div class="section-label reveal" data-en="WHAT WE BUILD" data-fr="CE QUE NOUS CONSTRUISONS">WHAT WE BUILD</div>
+    <h2 class="reveal" data-en="Not another scheduling tool.<br>A complete growth engine." data-fr="Pas un simple outil de planification.<br>Un véritable moteur de croissance.">Not another scheduling tool.<br>A complete growth engine.</h2>
+    <p class="reveal" data-en="Custom AI agent systems that handle your entire marketing workflow — from strategy to creation to optimization." data-fr="Des systèmes d'agents IA personnalisés qui gèrent l'ensemble de votre workflow marketing — de la stratégie à la création en passant par l'optimisation.">Custom AI agent systems that handle your entire marketing workflow — from strategy to creation to optimization.</p>
     <div class="value-blocks">
       <div class="value-block reveal">
-        <h3>Social media agents <span class="tag">Content + Strategy</span></h3>
-        <p>AI creates, schedules, and optimizes content across TikTok, Instagram, Twitter, and LinkedIn. Platform-native formats. In your brand voice. Every day.</p>
+        <h3><span data-en="Social media agents" data-fr="Agents réseaux sociaux">Social media agents</span> <span class="tag">Content + Strategy</span></h3>
+        <p data-en="AI creates, schedules, and optimizes content across TikTok, Instagram, Twitter, and LinkedIn. Platform-native formats. In your brand voice. Every day." data-fr="L'IA crée, planifie et optimise le contenu sur TikTok, Instagram, Twitter et LinkedIn. Formats natifs. Avec votre ton de marque. Chaque jour.">AI creates, schedules, and optimizes content across TikTok, Instagram, Twitter, and LinkedIn. Platform-native formats. In your brand voice. Every day.</p>
       </div>
       <div class="value-block reveal">
-        <h3>Growth marketing agents <span class="tag">SEO + Ads + Email</span></h3>
-        <p>SEO articles, email sequences, ad copy, and landing pages — all automated with weekly performance reports and self-optimizing campaigns.</p>
+        <h3><span data-en="Growth marketing agents" data-fr="Agents marketing de croissance">Growth marketing agents</span> <span class="tag">SEO + Ads + Email</span></h3>
+        <p data-en="SEO articles, email sequences, ad copy, and landing pages — all automated with weekly performance reports and self-optimizing campaigns." data-fr="Articles SEO, séquences email, copies publicitaires et landing pages — tout est automatisé avec des rapports de performance hebdomadaires et des campagnes auto-optimisées.">SEO articles, email sequences, ad copy, and landing pages — all automated with weekly performance reports and self-optimizing campaigns.</p>
       </div>
       <div class="value-block reveal">
-        <h3>Business automation agents <span class="tag">Ops + CRM + Support</span></h3>
-        <p>CRM workflows, lead scoring, customer support, data entry. Replace repetitive tasks with agents that run 24/7 at zero marginal cost.</p>
+        <h3><span data-en="Business automation agents" data-fr="Agents d'automatisation métier">Business automation agents</span> <span class="tag">Ops + CRM + Support</span></h3>
+        <p data-en="CRM workflows, lead scoring, customer support, data entry. Replace repetitive tasks with agents that run 24/7 at zero marginal cost." data-fr="Workflows CRM, scoring de leads, support client, saisie de données. Remplacez les tâches répétitives par des agents actifs 24h/24 à coût marginal zéro.">CRM workflows, lead scoring, customer support, data entry. Replace repetitive tasks with agents that run 24/7 at zero marginal cost.</p>
       </div>
       <div class="value-block reveal">
-        <h3>Lead generation engine <span class="tag">Outbound + Inbound</span></h3>
-        <p>Automated prospecting, personalized outreach sequences, and smart follow-ups. Your pipeline fills itself while you focus on closing.</p>
+        <h3><span data-en="Lead generation engine" data-fr="Moteur de génération de leads">Lead generation engine</span> <span class="tag">Outbound + Inbound</span></h3>
+        <p data-en="Automated prospecting, personalized outreach sequences, and smart follow-ups. Your pipeline fills itself while you focus on closing." data-fr="Prospection automatisée, séquences de contact personnalisées et relances intelligentes. Votre pipeline se remplit pendant que vous vous concentrez sur la conversion.">Automated prospecting, personalized outreach sequences, and smart follow-ups. Your pipeline fills itself while you focus on closing.</p>
       </div>
     </div>
   </div>
@@ -739,28 +748,28 @@ footer{
 <!-- CONTROL -->
 <section class="control">
   <div class="container">
-    <div class="section-label reveal">YOU STAY IN CONTROL</div>
-    <h2 class="reveal" style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;letter-spacing:-0.025em;color:var(--white)">Human-approved. Always.</h2>
+    <div class="section-label reveal" data-en="YOU STAY IN CONTROL" data-fr="VOUS GARDEZ LE CONTRÔLE">YOU STAY IN CONTROL</div>
+    <h2 class="reveal" style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;letter-spacing:-0.025em;color:var(--white)" data-en="Human-approved. Always." data-fr="Approuvé par un humain. Toujours.">Human-approved. Always.</h2>
     <div class="control-points">
       <div class="control-point reveal">
         <div class="control-icon"></div>
         <div>
-          <h3>Every post reviewed before publishing</h3>
-          <p>You see exactly what goes out. Approve via dashboard, Telegram, or Slack. The agents do 95% — you do the 5% that requires human judgment.</p>
+          <h3 data-en="Every post reviewed before publishing" data-fr="Chaque publication est vérifiée avant d'être postée">Every post reviewed before publishing</h3>
+          <p data-en="You see exactly what goes out. Approve via dashboard, Telegram, or Slack. The agents do 95% — you do the 5% that requires human judgment." data-fr="Vous voyez exactement ce qui est publié. Approuvez via le tableau de bord, Telegram ou Slack. Les agents font 95% — vous faites les 5% qui nécessitent un jugement humain.">You see exactly what goes out. Approve via dashboard, Telegram, or Slack. The agents do 95% — you do the 5% that requires human judgment.</p>
         </div>
       </div>
       <div class="control-point reveal">
         <div class="control-icon"></div>
         <div>
-          <h3>Your brand voice, protected</h3>
-          <p>Agents are trained on your existing content, tone, and style. The output sounds like you wrote it — not like ChatGPT.</p>
+          <h3 data-en="Your brand voice, protected" data-fr="Votre ton de marque, protégé">Your brand voice, protected</h3>
+          <p data-en="Agents are trained on your existing content, tone, and style. The output sounds like you wrote it — not like ChatGPT." data-fr="Les agents sont formés sur votre contenu existant, votre ton et votre style. Le résultat sonne comme si vous l'aviez écrit — pas comme ChatGPT.">Agents are trained on your existing content, tone, and style. The output sounds like you wrote it — not like ChatGPT.</p>
         </div>
       </div>
       <div class="control-point reveal">
         <div class="control-icon"></div>
         <div>
-          <h3>The growth loop</h3>
-          <p>Weekly intelligence reports analyze what drove leads and what flopped. The strategy adjusts automatically so results compound over time.</p>
+          <h3 data-en="The growth loop" data-fr="La boucle de croissance">The growth loop</h3>
+          <p data-en="Weekly intelligence reports analyze what drove leads and what flopped. The strategy adjusts automatically so results compound over time." data-fr="Des rapports d'intelligence hebdomadaires analysent ce qui a généré des leads et ce qui n'a pas marché. La stratégie s'ajuste automatiquement pour que les résultats se multiplient avec le temps.">Weekly intelligence reports analyze what drove leads and what flopped. The strategy adjusts automatically so results compound over time.</p>
         </div>
       </div>
     </div>
@@ -770,38 +779,38 @@ footer{
 <!-- COMPARISON -->
 <section class="comparison">
   <div class="container">
-    <div class="section-label reveal">WHY OWLAGENT</div>
-    <h2 class="reveal" style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;letter-spacing:-0.025em;color:var(--white)">The math is simple.</h2>
+    <div class="section-label reveal" data-en="WHY OWLAGENT" data-fr="POURQUOI OWLAGENT">WHY OWLAGENT</div>
+    <h2 class="reveal" style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;letter-spacing:-0.025em;color:var(--white)" data-en="The math is simple." data-fr="Le calcul est simple.">The math is simple.</h2>
     <div class="compare-table reveal">
       <div class="compare-row header">
         <div class="compare-cell"></div>
-        <div class="compare-cell">Full-time hire</div>
+        <div class="compare-cell" data-en="Full-time hire" data-fr="Employé temps plein">Full-time hire</div>
         <div class="compare-cell highlight">OwlAgent</div>
       </div>
       <div class="compare-row">
-        <div class="compare-cell">Monthly cost</div>
+        <div class="compare-cell" data-en="Monthly cost" data-fr="Coût mensuel">Monthly cost</div>
         <div class="compare-cell">$4,500 – $8,000+</div>
         <div class="compare-cell highlight">$690 – $1,890</div>
       </div>
       <div class="compare-row">
-        <div class="compare-cell">Platforms covered</div>
-        <div class="compare-cell">1–2 max</div>
-        <div class="compare-cell highlight">All platforms</div>
+        <div class="compare-cell" data-en="Platforms covered" data-fr="Plateformes couvertes">Platforms covered</div>
+        <div class="compare-cell" data-en="1–2 max" data-fr="1–2 max">1–2 max</div>
+        <div class="compare-cell highlight" data-en="All platforms" data-fr="Toutes les plateformes">All platforms</div>
       </div>
       <div class="compare-row">
-        <div class="compare-cell">Working hours</div>
-        <div class="compare-cell">8h/day, 5 days</div>
+        <div class="compare-cell" data-en="Working hours" data-fr="Heures de travail">Working hours</div>
+        <div class="compare-cell" data-en="8h/day, 5 days" data-fr="8h/jour, 5 jours">8h/day, 5 days</div>
         <div class="compare-cell highlight">24/7/365</div>
       </div>
       <div class="compare-row">
-        <div class="compare-cell">Time to start</div>
-        <div class="compare-cell">4–8 weeks hiring</div>
-        <div class="compare-cell highlight">14 days live</div>
+        <div class="compare-cell" data-en="Time to start" data-fr="Délai de démarrage">Time to start</div>
+        <div class="compare-cell" data-en="4–8 weeks hiring" data-fr="4–8 semaines d'embauche">4–8 weeks hiring</div>
+        <div class="compare-cell highlight" data-en="14 days live" data-fr="14 jours pour être live">14 days live</div>
       </div>
       <div class="compare-row">
-        <div class="compare-cell">Scales with you</div>
-        <div class="compare-cell"><span class="cross">✕</span> Need more hires</div>
-        <div class="compare-cell highlight"><span class="check">✓</span> Same cost</div>
+        <div class="compare-cell" data-en="Scales with you" data-fr="Évolue avec vous">Scales with you</div>
+        <div class="compare-cell"><span class="cross">✕</span> <span data-en="Need more hires" data-fr="Il faut embaucher">Need more hires</span></div>
+        <div class="compare-cell highlight"><span class="check">✓</span> <span data-en="Same cost" data-fr="Même coût">Same cost</span></div>
       </div>
     </div>
   </div>
@@ -810,39 +819,39 @@ footer{
 <!-- PROCESS -->
 <section class="process">
   <div class="container">
-    <div class="section-label reveal">HOW IT WORKS</div>
-    <h2 class="reveal" style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;letter-spacing:-0.025em;color:var(--white)">Live agents in two weeks</h2>
+    <div class="section-label reveal" data-en="HOW IT WORKS" data-fr="COMMENT ÇA MARCHE">HOW IT WORKS</div>
+    <h2 class="reveal" style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;letter-spacing:-0.025em;color:var(--white)" data-en="Live agents in two weeks" data-fr="Des agents en production en deux semaines">Live agents in two weeks</h2>
     <div class="steps">
       <div class="step reveal">
         <div class="step-num">01</div>
         <div>
           <div class="step-time">Day 1–3</div>
-          <h3>Discovery & Audit</h3>
-          <p>We audit your marketing, competitors, and audience. You get a custom agent strategy with projected ROI — free, no commitment.</p>
+          <h3 data-en="Discovery & Audit" data-fr="Découverte & Audit">Discovery & Audit</h3>
+          <p data-en="We audit your marketing, competitors, and audience. You get a custom agent strategy with projected ROI — free, no commitment." data-fr="Nous auditons votre marketing, vos concurrents et votre audience. Vous recevez une stratégie d'agents personnalisée avec un ROI projeté — gratuit, sans engagement.">We audit your marketing, competitors, and audience. You get a custom agent strategy with projected ROI — free, no commitment.</p>
         </div>
       </div>
       <div class="step reveal">
         <div class="step-num">02</div>
         <div>
           <div class="step-time">Day 4–10</div>
-          <h3>Agent Configuration</h3>
-          <p>We build your agent stack. Train on your brand voice. Connect platforms. Set up approval workflows and analytics.</p>
+          <h3 data-en="Agent Configuration" data-fr="Configuration des agents">Agent Configuration</h3>
+          <p data-en="We build your agent stack. Train on your brand voice. Connect platforms. Set up approval workflows and analytics." data-fr="Nous construisons votre stack d'agents. Formation à votre ton de marque. Connexion des plateformes. Mise en place des workflows d'approbation et de l'analytique.">We build your agent stack. Train on your brand voice. Connect platforms. Set up approval workflows and analytics.</p>
         </div>
       </div>
       <div class="step reveal">
         <div class="step-num">03</div>
         <div>
           <div class="step-time">Day 11–14</div>
-          <h3>Launch & Hypercare</h3>
-          <p>Agents go live with human approval. We monitor 24/7, tune quality, and adjust strategy based on real-time performance.</p>
+          <h3 data-en="Launch & Hypercare" data-fr="Lancement & Suivi intensif">Launch & Hypercare</h3>
+          <p data-en="Agents go live with human approval. We monitor 24/7, tune quality, and adjust strategy based on real-time performance." data-fr="Les agents sont lancés avec approbation humaine. Nous surveillons 24h/24, ajustons la qualité et adaptons la stratégie en fonction des performances en temps réel.">Agents go live with human approval. We monitor 24/7, tune quality, and adjust strategy based on real-time performance.</p>
         </div>
       </div>
       <div class="step reveal">
         <div class="step-num">04</div>
         <div>
           <div class="step-time">Month 2+</div>
-          <h3>Compound Growth</h3>
-          <p>The feedback loop kicks in. Agents learn what converts. Content gets smarter. Cost per lead drops every month.</p>
+          <h3 data-en="Compound Growth" data-fr="Croissance composée">Compound Growth</h3>
+          <p data-en="The feedback loop kicks in. Agents learn what converts. Content gets smarter. Cost per lead drops every month." data-fr="La boucle de rétroaction s'enclenche. Les agents apprennent ce qui convertit. Le contenu s'améliore. Le coût par lead baisse chaque mois.">The feedback loop kicks in. Agents learn what converts. Content gets smarter. Cost per lead drops every month.</p>
         </div>
       </div>
     </div>
@@ -852,44 +861,44 @@ footer{
 <!-- PRICING -->
 <section id="pricing" class="pricing">
   <div class="container">
-    <div class="section-label reveal">PRICING</div>
-    <h2 class="reveal" style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;letter-spacing:-0.025em;color:var(--white)">Transparent pricing. No surprises.</h2>
+    <div class="section-label reveal" data-en="PRICING" data-fr="TARIFS">PRICING</div>
+    <h2 class="reveal" style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;letter-spacing:-0.025em;color:var(--white)" data-en="Transparent pricing. No surprises." data-fr="Tarification transparente. Sans surprise.">Transparent pricing. No surprises.</h2>
     <div class="price-cards">
       <div class="price-row reveal">
         <div class="plan-info">
           <div class="plan-name">Starter</div>
-          <div class="plan-desc">1 platform · Content + strategy + weekly growth reports</div>
+          <div class="plan-desc" data-en="1 platform · Content + strategy + weekly growth reports" data-fr="1 plateforme · Contenu + stratégie + rapports de croissance hebdomadaires">1 platform · Content + strategy + weekly growth reports</div>
         </div>
         <div class="plan-prices">
-          <div class="setup">$1,490 setup</div>
-          <div class="monthly">$690 <small>/mo</small></div>
+          <div class="setup" data-en="$1,490 setup" data-fr="$1 490 mise en place">$1,490 setup</div>
+          <div class="monthly">$690 <small data-en="/mo" data-fr="/mois">/mo</small></div>
         </div>
       </div>
       <div class="price-row featured reveal">
         <div class="plan-info">
-          <div class="plan-name">Growth <span class="badge">POPULAR</span></div>
-          <div class="plan-desc">All platforms · Lead gen · SEO · Email · CRM · Priority support</div>
+          <div class="plan-name"><span data-en="Growth" data-fr="Growth">Growth</span> <span class="badge" data-en="POPULAR" data-fr="POPULAIRE">POPULAR</span></div>
+          <div class="plan-desc" data-en="All platforms · Lead gen · SEO · Email · CRM · Priority support" data-fr="Toutes les plateformes · Génération de leads · SEO · Email · CRM · Support prioritaire">All platforms · Lead gen · SEO · Email · CRM · Priority support</div>
         </div>
         <div class="plan-prices">
-          <div class="setup">$2,290 setup</div>
-          <div class="monthly">$1,890 <small>/mo</small></div>
+          <div class="setup" data-en="$2,290 setup" data-fr="$2 290 mise en place">$2,290 setup</div>
+          <div class="monthly">$1,890 <small data-en="/mo" data-fr="/mois">/mo</small></div>
         </div>
       </div>
       <div class="price-row reveal">
         <div class="plan-info">
           <div class="plan-name">Enterprise</div>
-          <div class="plan-desc">White-label · SLA · Dedicated strategist · Custom integrations</div>
+          <div class="plan-desc" data-en="White-label · SLA · Dedicated strategist · Custom integrations" data-fr="Marque blanche · SLA · Stratège dédié · Intégrations personnalisées">White-label · SLA · Dedicated strategist · Custom integrations</div>
         </div>
         <div class="plan-prices">
-          <div class="setup">Custom setup</div>
-          <div class="monthly">$4,900+ <small>/mo</small></div>
+          <div class="setup" data-en="Custom setup" data-fr="Mise en place sur mesure">Custom setup</div>
+          <div class="monthly">$4,900+ <small data-en="/mo" data-fr="/mois">/mo</small></div>
         </div>
       </div>
     </div>
     <div class="price-cta reveal">
-      <a href="https://cal.com/owlagent/growth-audit" class="btn btn-white btn-full" target="_blank" rel="noopener">Book a free call →</a>
+      <a href="https://cal.com/owlagent/growth-audit" class="btn btn-white btn-full" target="_blank" rel="noopener" data-en="Book a free call →" data-fr="Réservez un appel gratuit →">Book a free call →</a>
     </div>
-    <div class="price-note reveal">Monthly billing · Cancel anytime · Setup guarantee</div>
+    <div class="price-note reveal" data-en="Monthly billing · Cancel anytime · Setup guarantee" data-fr="Facturation mensuelle · Résiliez quand vous voulez · Garantie de mise en place">Monthly billing · Cancel anytime · Setup guarantee</div>
   </div>
 </section>
 
@@ -899,10 +908,10 @@ footer{
     <div class="founder-card reveal">
       <div class="founder-avatar">L</div>
       <div class="founder-info">
-        <div class="name">Talk to Lorenzo</div>
-        <div class="desc">Growth strategist · Building AI automation systems since 2023</div>
+        <div class="name" data-en="Talk to Lorenzo" data-fr="Parlez à Lorenzo">Talk to Lorenzo</div>
+        <div class="desc" data-en="Growth strategist · Building AI automation systems since 2023" data-fr="Stratège de croissance · Création de systèmes d'automatisation IA depuis 2023">Growth strategist · Building AI automation systems since 2023</div>
       </div>
-      <a href="https://cal.com/owlagent/growth-audit" class="founder-link" target="_blank" rel="noopener">Book a call →</a>
+      <a href="https://cal.com/owlagent/growth-audit" class="founder-link" target="_blank" rel="noopener" data-en="Book a call →" data-fr="Réservez un appel →">Book a call →</a>
     </div>
   </div>
 </section>
@@ -911,8 +920,8 @@ footer{
 <section class="guarantee">
   <div class="container">
     <div class="guarantee-box reveal">
-      <h3>100% setup guarantee</h3>
-      <p>If you're not satisfied with the agent setup within the first 14 days, we refund your setup fee — no questions asked.</p>
+      <h3 data-en="100% setup guarantee" data-fr="Garantie mise en place 100%">100% setup guarantee</h3>
+      <p data-en="If you're not satisfied with the agent setup within the first 14 days, we refund your setup fee — no questions asked." data-fr="Si vous n'êtes pas satisfait de la mise en place des agents dans les 14 premiers jours, nous remboursons vos frais de mise en place — sans condition.">If you're not satisfied with the agent setup within the first 14 days, we refund your setup fee — no questions asked.</p>
     </div>
   </div>
 </section>
@@ -920,49 +929,49 @@ footer{
 <!-- FAQ -->
 <section id="faq" class="faq">
   <div class="container">
-    <div class="section-label reveal">FAQ</div>
+    <div class="section-label reveal" data-en="FAQ" data-fr="FAQ">FAQ</div>
     <div class="faq-list">
       <div class="faq-item reveal">
         <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-          Will the content sound like AI?
+          <span data-en="Will the content sound like AI?" data-fr="Le contenu aura-t-il l'air généré par une IA ?">Will the content sound like AI?</span>
           <span class="icon">+</span>
         </button>
-        <div class="faq-a"><p>No. Every agent is trained on your existing content, brand guidelines, and voice. The output sounds like you — not like ChatGPT. We calibrate until you can't tell the difference.</p></div>
+        <div class="faq-a"><p data-en="No. Every agent is trained on your existing content, brand guidelines, and voice. The output sounds like you — not like ChatGPT. We calibrate until you can't tell the difference." data-fr="Non. Chaque agent est formé sur votre contenu existant, vos guidelines de marque et votre ton. Le résultat sonne comme vous — pas comme ChatGPT. Nous calibrons jusqu'à ce que vous ne puissiez pas faire la différence.">No. Every agent is trained on your existing content, brand guidelines, and voice. The output sounds like you — not like ChatGPT. We calibrate until you can't tell the difference.</p></div>
       </div>
       <div class="faq-item reveal">
         <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-          Do I need to be technical?
+          <span data-en="Do I need to be technical?" data-fr="Dois-je être technique ?">Do I need to be technical?</span>
           <span class="icon">+</span>
         </button>
-        <div class="faq-a"><p>Not at all. We handle everything — setup, integrations, optimization. You manage content through a simple dashboard, Telegram, or Slack. Approve with one click.</p></div>
+        <div class="faq-a"><p data-en="Not at all. We handle everything — setup, integrations, optimization. You manage content through a simple dashboard, Telegram, or Slack. Approve with one click." data-fr="Pas du tout. Nous gérons tout — mise en place, intégrations, optimisation. Vous gérez le contenu via un tableau de bord simple, Telegram ou Slack. Approuvez en un clic.">Not at all. We handle everything — setup, integrations, optimization. You manage content through a simple dashboard, Telegram, or Slack. Approve with one click.</p></div>
       </div>
       <div class="faq-item reveal">
         <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-          What platforms do you support?
+          <span data-en="What platforms do you support?" data-fr="Quelles plateformes supportez-vous ?">What platforms do you support?</span>
           <span class="icon">+</span>
         </button>
-        <div class="faq-a"><p>TikTok, Instagram, Twitter/X, LinkedIn, email sequences, and Google Ads. Each gets its own agent optimized for that platform's algorithm and format.</p></div>
+        <div class="faq-a"><p data-en="TikTok, Instagram, Twitter/X, LinkedIn, email sequences, and Google Ads. Each gets its own agent optimized for that platform's algorithm and format." data-fr="TikTok, Instagram, Twitter/X, LinkedIn, séquences email et Google Ads. Chaque plateforme a son propre agent optimisé pour son algorithme et son format.">TikTok, Instagram, Twitter/X, LinkedIn, email sequences, and Google Ads. Each gets its own agent optimized for that platform's algorithm and format.</p></div>
       </div>
       <div class="faq-item reveal">
         <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-          How is this different from Buffer or Hootsuite?
+          <span data-en="How is this different from Buffer or Hootsuite?" data-fr="En quoi est-ce différent de Buffer ou Hootsuite ?">How is this different from Buffer or Hootsuite?</span>
           <span class="icon">+</span>
         </button>
-        <div class="faq-a"><p>Those are schedulers — you still create the content. We automate the entire workflow: strategy, content creation, posting, analytics, and optimization. The agents learn and improve weekly.</p></div>
+        <div class="faq-a"><p data-en="Those are schedulers — you still create the content. We automate the entire workflow: strategy, content creation, posting, analytics, and optimization. The agents learn and improve weekly." data-fr="Ce sont des outils de planification — vous devez toujours créer le contenu. Nous automatisons l'ensemble du workflow : stratégie, création de contenu, publication, analytique et optimisation. Les agents apprennent et s'améliorent chaque semaine.">Those are schedulers — you still create the content. We automate the entire workflow: strategy, content creation, posting, analytics, and optimization. The agents learn and improve weekly.</p></div>
       </div>
       <div class="faq-item reveal">
         <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-          What if I want to cancel?
+          <span data-en="What if I want to cancel?" data-fr="Et si je veux annuler ?">What if I want to cancel?</span>
           <span class="icon">+</span>
         </button>
-        <div class="faq-a"><p>Monthly billing, cancel whenever. No lock-in, no penalties. You keep all the content and workflows we built. Plus the 14-day setup guarantee if you're not happy from day one.</p></div>
+        <div class="faq-a"><p data-en="Monthly billing, cancel whenever. No lock-in, no penalties. You keep all the content and workflows we built. Plus the 14-day setup guarantee if you're not happy from day one." data-fr="Facturation mensuelle, résiliez quand vous voulez. Pas d'engagement, pas de pénalités. Vous gardez tout le contenu et les workflows créés. Plus la garantie de mise en place de 14 jours si vous n'êtes pas satisfait dès le premier jour.">Monthly billing, cancel whenever. No lock-in, no penalties. You keep all the content and workflows we built. Plus the 14-day setup guarantee if you're not happy from day one.</p></div>
       </div>
       <div class="faq-item reveal">
         <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-          Can I see a demo before committing?
+          <span data-en="Can I see a demo before committing?" data-fr="Puis-je voir une démo avant de m'engager ?">Can I see a demo before committing?</span>
           <span class="icon">+</span>
         </button>
-        <div class="faq-a"><p>Yes — the free growth audit IS the demo. We'll analyze your brand, show you exactly what the agents would produce, and give you a custom strategy. No cost, no commitment.</p></div>
+        <div class="faq-a"><p data-en="Yes — the free growth audit IS the demo. We'll analyze your brand, show you exactly what the agents would produce, and give you a custom strategy. No cost, no commitment." data-fr="Oui — l'audit de croissance gratuit EST la démo. Nous analyserons votre marque, vous montrerons exactement ce que les agents produiraient, et vous donnerons une stratégie personnalisée. Sans frais, sans engagement.">Yes — the free growth audit IS the demo. We'll analyze your brand, show you exactly what the agents would produce, and give you a custom strategy. No cost, no commitment.</p></div>
       </div>
     </div>
   </div>
@@ -971,10 +980,10 @@ footer{
 <!-- FINAL CTA -->
 <section id="cta" class="final-cta">
   <div class="container">
-    <h2 class="reveal">Ready to stop hiring<br>and start automating?</h2>
-    <p class="reveal">Book a free 30-minute growth audit. We'll show you exactly what your AI agents would produce.</p>
-    <a href="https://cal.com/owlagent/growth-audit" class="btn btn-white btn-lg reveal" style="max-width:440px;width:100%" target="_blank" rel="noopener">Book Your Free Growth Audit →</a>
-    <div class="final-sub reveal">Free · No commitment · Custom strategy in 48h</div>
+    <h2 class="reveal" data-en="Ready to stop hiring<br>and start automating?" data-fr="Prêt à arrêter de recruter<br>et à automatiser ?">Ready to stop hiring<br>and start automating?</h2>
+    <p class="reveal" data-en="Book a free 30-minute growth audit. We'll show you exactly what your AI agents would produce." data-fr="Réservez un audit de croissance gratuit de 30 minutes. Nous vous montrerons exactement ce que vos agents IA produiraient.">Book a free 30-minute growth audit. We'll show you exactly what your AI agents would produce.</p>
+    <a href="https://cal.com/owlagent/growth-audit" class="btn btn-white btn-lg reveal" style="max-width:440px;width:100%" target="_blank" rel="noopener" data-en="Book Your Free Growth Audit →" data-fr="Réservez Votre Audit Croissance Gratuit →">Book Your Free Growth Audit →</a>
+    <div class="final-sub reveal" data-en="Free · No commitment · Custom strategy in 48h" data-fr="Gratuit · Sans engagement · Stratégie personnalisée en 48h">Free · No commitment · Custom strategy in 48h</div>
   </div>
 </section>
 
@@ -1004,6 +1013,41 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
     if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}
   });
 });
+
+// Language switcher
+let currentLang = localStorage.getItem('owlagent-lang') || 'en';
+
+function applyLang(lang) {
+  document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (val !== null) {
+      // Check if element has child elements that need preserving
+      if (el.querySelector('span.tag, span.badge, small, span.check, span.cross')) {
+        // For elements with important child spans, only replace text nodes
+        const children = Array.from(el.childNodes);
+        const firstTextNode = children.find(n => n.nodeType === 3 && n.textContent.trim());
+        if (firstTextNode) firstTextNode.textContent = val + ' ';
+      } else {
+        el.innerHTML = val;
+      }
+    }
+  });
+  document.documentElement.lang = lang;
+  document.title = lang === 'en'
+    ? 'OwlAgent — AI Agents That Grow Your Business on Autopilot'
+    : 'OwlAgent — Agents IA Qui Font Croître Votre Business en Autopilote';
+  const btn = document.getElementById('langBtn');
+  if (btn) btn.textContent = lang === 'en' ? 'FR' : 'EN';
+  currentLang = lang;
+  localStorage.setItem('owlagent-lang', lang);
+}
+
+function toggleLang() {
+  applyLang(currentLang === 'en' ? 'fr' : 'en');
+}
+
+// Apply saved language on load
+if (currentLang !== 'en') applyLang(currentLang);
 </script>
 
 </body>
