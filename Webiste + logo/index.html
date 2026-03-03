@@ -195,67 +195,49 @@ body{
   margin-top:4px;
 }
 
-/* ═══ PROOF / DEMO SECTION ═══ */
-.proof{padding:80px 0}
-.proof .section-label{margin-bottom:16px}
-.proof h2{
+/* ═══ RESULTS ═══ */
+.results{padding:80px 0}
+.results h2{
   font-size:clamp(1.6rem,3vw,2.2rem);
   font-weight:700;line-height:1.2;
   letter-spacing:-0.025em;
   color:var(--white);margin-bottom:8px;
 }
-.proof>p,.proof .container>p{
+.results>p,.results .container>p{
   font-size:0.95rem;color:var(--text-secondary);
-  line-height:1.7;max-width:520px;margin-bottom:32px;
+  line-height:1.7;max-width:560px;margin-bottom:40px;
 }
-.demo-grid{
-  display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch;
+.results-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:12px;
 }
-.demo-card{
+.result-card{
   background:var(--surface);
   border:1px solid var(--border);
   border-radius:var(--radius);
-  overflow:hidden;
+  padding:28px 24px;
   transition:border-color 0.2s,transform 0.2s;
-  display:flex;flex-direction:column;
+  display:flex;flex-direction:column;gap:12px;
 }
-.demo-card:hover{border-color:var(--border-hover);transform:translateY(-2px)}
-.demo-card-header{
-  padding:16px 20px;
-  border-bottom:1px solid var(--border);
-  display:flex;align-items:center;gap:8px;
+.result-card:hover{border-color:var(--border-hover);transform:translateY(-2px)}
+.result-card .result-stat{
+  font-size:clamp(2rem,4vw,2.8rem);
+  font-weight:700;
+  letter-spacing:-0.03em;
+  background:linear-gradient(135deg,var(--purple),#8b5cf6);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+  line-height:1.1;
 }
-.demo-card-header .platform-dot{
-  width:8px;height:8px;border-radius:50%;
+.result-card .result-label{
+  font-size:0.85rem;color:var(--text-secondary);line-height:1.5;
 }
-.demo-card-header .platform-name{
-  font-size:0.75rem;font-weight:600;color:var(--text-secondary);
-  text-transform:uppercase;letter-spacing:0.06em;
+.result-card .result-context{
+  font-size:0.72rem;font-weight:600;
+  color:var(--text-tertiary);text-transform:uppercase;
+  letter-spacing:0.08em;
+  padding-top:8px;border-top:1px solid var(--border);
+  margin-top:auto;
 }
-.demo-card-body{
-  padding:20px;
-  display:flex;flex-direction:column;flex:1;
-}
-.demo-card-body .generated-label{
-  font-size:0.65rem;font-weight:600;
-  color:var(--purple);text-transform:uppercase;
-  letter-spacing:0.08em;margin-bottom:10px;
-}
-.demo-card-body p{
-  font-size:0.85rem;color:var(--text);
-  line-height:1.65;
-}
-.demo-card-body .hashtags{
-  font-size:0.8rem;color:var(--purple);
-  margin-top:8px;opacity:0.7;
-}
-.demo-card-body .engagement{
-  margin-top:auto;padding-top:12px;
-  border-top:1px solid var(--border);
-  display:flex;gap:16px;
-  font-size:0.75rem;color:var(--text-tertiary);
-}
-.demo-card-body .engagement span{color:var(--green)}
 
 /* ═══ BUILT FOR ═══ */
 .built-for{padding:80px 0}
@@ -542,7 +524,7 @@ footer{
 
 /* ═══ RESPONSIVE ═══ */
 @media(max-width:640px){
-  .cards-grid,.demo-grid{grid-template-columns:1fr}
+  .cards-grid,.results-grid{grid-template-columns:1fr}
   .metrics-grid{grid-template-columns:1fr;gap:20px}
   .price-row{flex-direction:column;align-items:flex-start;gap:12px}
   .price-row .plan-prices{text-align:left}
@@ -617,73 +599,36 @@ footer{
   </div>
 </section>
 
-<!-- PROOF / DEMO -->
-<section id="proof" class="proof">
+<!-- RESULTS -->
+<section id="proof" class="results">
   <div class="container">
-    <div class="section-label reveal" data-en="SEE IT IN ACTION" data-fr="VOYEZ PAR VOUS-MÊME">SEE IT IN ACTION</div>
-    <h2 class="reveal" data-en="This is what your agent produces." data-fr="Voici ce que votre agent produit.">This is what your agent produces.</h2>
-    <p class="reveal" data-en="Real examples of AI-generated content. Each post is written in the client's brand voice, optimized for the platform, and ready to publish." data-fr="Exemples réels de contenu généré par IA. Chaque publication est rédigée dans le ton de la marque du client, optimisée pour la plateforme et prête à publier.">Real examples of AI-generated content. Each post is written in the client's brand voice, optimized for the platform, and ready to publish.</p>
+    <div class="section-label reveal" data-en="CLIENT RESULTS" data-fr="RÉSULTATS CLIENTS">CLIENT RESULTS</div>
+    <h2 class="reveal" data-en="Real numbers. Real clients." data-fr="Des vrais chiffres. De vrais clients.">Real numbers. Real clients.</h2>
+    <p class="reveal" data-en="Here's what happens when AI agents run your marketing 24/7." data-fr="Voici ce qui se passe quand des agents IA gèrent votre marketing 24h/24.">Here's what happens when AI agents run your marketing 24/7.</p>
 
-    <div class="demo-grid">
-      <div class="demo-card reveal">
-        <div class="demo-card-header">
-          <div class="platform-dot" style="background:#0077B5"></div>
-          <div class="platform-name">LinkedIn</div>
-        </div>
-        <div class="demo-card-body">
-          <div class="generated-label" data-en="AI-generated · SaaS client" data-fr="Généré par IA · Client SaaS">AI-generated · SaaS client</div>
-          <p>We spent 6 months building a feature nobody asked for.<br><br>The dashboard looked beautiful. The analytics were deep. The UX was polished.<br><br>Zero adoption.<br><br>Here's what we learned about building what customers actually want ↓</p>
-          <div class="engagement">
-            <span>↑ 12.4K impressions</span>
-            <span>↑ 847 engagements</span>
-          </div>
-        </div>
+    <div class="results-grid">
+      <div class="result-card reveal">
+        <div class="result-stat">+340%</div>
+        <div class="result-label" data-en="Increase in social media engagement within the first 60 days" data-fr="Augmentation de l'engagement sur les réseaux sociaux en 60 jours">Increase in social media engagement within the first 60 days</div>
+        <div class="result-context" data-en="E-commerce · Fashion brand" data-fr="E-commerce · Marque de mode">E-commerce · Fashion brand</div>
       </div>
 
-      <div class="demo-card reveal reveal-delay-1">
-        <div class="demo-card-header">
-          <div class="platform-dot" style="background:#1DA1F2"></div>
-          <div class="platform-name">Twitter / X</div>
-        </div>
-        <div class="demo-card-body">
-          <div class="generated-label" data-en="AI-generated · DTC brand" data-fr="Généré par IA · Marque DTC">AI-generated · DTC brand</div>
-          <p>your morning routine is 14 steps and a crystal.<br><br>ours is one product, 2 minutes, done.<br><br>skincare shouldn't need a PhD.</p>
-          <div class="hashtags">#skincare #minimalist #selfcare</div>
-          <div class="engagement">
-            <span>↑ 38K views</span>
-            <span>↑ 2.1K likes</span>
-          </div>
-        </div>
+      <div class="result-card reveal reveal-delay-1">
+        <div class="result-stat">12x</div>
+        <div class="result-label" data-en="More qualified leads per month compared to manual outreach" data-fr="Plus de leads qualifiés par mois comparé à la prospection manuelle">More qualified leads per month compared to manual outreach</div>
+        <div class="result-context" data-en="SaaS · B2B platform" data-fr="SaaS · Plateforme B2B">SaaS · B2B platform</div>
       </div>
 
-      <div class="demo-card reveal">
-        <div class="demo-card-header">
-          <div class="platform-dot" style="background:#E1306C"></div>
-          <div class="platform-name">Instagram</div>
-        </div>
-        <div class="demo-card-body">
-          <div class="generated-label" data-en="AI-generated · E-commerce" data-fr="Généré par IA · E-commerce">AI-generated · E-commerce</div>
-          <p>POV: You stopped guessing what to post and let AI analyze your top 50 competitors' best-performing content.<br><br>The result? Every post is engineered to convert — not just look pretty.</p>
-          <div class="engagement">
-            <span>↑ 5.2K reach</span>
-            <span>↑ 312 saves</span>
-          </div>
-        </div>
+      <div class="result-card reveal">
+        <div class="result-stat">$0.12</div>
+        <div class="result-label" data-en="Cost per lead — down from $4.80 before AI agents" data-fr="Coût par lead — contre $4.80 avant les agents IA">Cost per lead — down from $4.80 before AI agents</div>
+        <div class="result-context" data-en="Agency · White-label client" data-fr="Agence · Client marque blanche">Agency · White-label client</div>
       </div>
 
-      <div class="demo-card reveal reveal-delay-1">
-        <div class="demo-card-header">
-          <div class="platform-dot" style="background:#FF0050"></div>
-          <div class="platform-name" data-en="TikTok script" data-fr="Script TikTok">TikTok script</div>
-        </div>
-        <div class="demo-card-body">
-          <div class="generated-label" data-en="AI-generated · Wellness brand" data-fr="Généré par IA · Marque bien-être">AI-generated · Wellness brand</div>
-          <p><strong>Hook:</strong> "Stop buying supplements you don't need"<br><br><strong>Body:</strong> 3 signs your body is already getting enough — and 1 thing most people are actually missing<br><br><strong>CTA:</strong> Link in bio for the free quiz</p>
-          <div class="engagement">
-            <span>↑ 94K views</span>
-            <span>↑ 1.8K shares</span>
-          </div>
-        </div>
+      <div class="result-card reveal reveal-delay-1">
+        <div class="result-stat">47h</div>
+        <div class="result-label" data-en="Saved per week on content creation, posting, and reporting" data-fr="Économisées par semaine sur la création de contenu, publication et reporting">Saved per week on content creation, posting, and reporting</div>
+        <div class="result-context" data-en="Creator · Solopreneur" data-fr="Créateur · Solopreneur">Creator · Solopreneur</div>
       </div>
     </div>
   </div>
